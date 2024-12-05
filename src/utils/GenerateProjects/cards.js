@@ -1,45 +1,44 @@
 export const cardsArray = [
     {
         id: 1,
-        title: 'Card 1',
-        description: 'Description for Card 1',
-        image: "../../public/images/obra-1.webp"
+        title: 'Modernización Residencial',
+        description: 'Renovación integral con diseño contemporáneo.',
+        image: "/src/public/projects_images/obra-1.webp"
     },
     {
         id: 2,
-        title: 'Card 2',
-        description: 'Description for Card 2',
-        image: "../../public/images/obra-2.webp"
+        title: 'Torre en Construcción',
+        description: 'Avance estructural de una torre de oficinas.',
+        image: "/src/public/projects_images/obra-2.webp"
     },
-    {
-        id: 3,
-        title: 'Card 3',
-        description: 'Description for Card 3',
-        image: "../../public/images/obra-3.webp"
-    },
+    // {
+    //     id: 3,
+    //     title: 'Edificio Sustentable',
+    //     description: 'Diseño amigable con el medio ambiente.',
+    //     image: "/src/public/projects_images/obra-3.png"
+    // },
     {
         id: 4,
-        title: 'Card 4',
-        description: 'Description for Card 4',
-        image: "../../public/images/obra-4.webp"
+        title: 'Espacio Corporativo',
+        description: 'Oficinas diseñadas para la productividad.',
+        image: "/src/public/projects_images/obra4.jpeg"
     },
     {
         id: 5,
-        title: 'Card 5',
-        description: 'Description for Card 5',
-        image: "../../public/images/obra-5.webp"
+        title: 'Casa Familiar',
+        description: 'Hogar construido para comodidad y estilo.',
+        image: "/src/public/projects_images/obra-5.webp"
     },
     {
         id: 6,
-        title: 'Card 6',
-        description: 'Description for Card 6',
-        image: "../../public/images/obra-6.webp"
+        title: 'Rehabilitación Urbana',
+        description: 'Revitalización de un espacio urbano clave.',
+        image: "/src/public/projects_images/obra-6.png"
     },
     {
         id: 7,
-        title: 'Card 7',
-        description: 'Description for Card 7',
-        image: "../../public/images/obra-7.webp"
+        title: 'Plaza Comercial',
+        description: 'Espacio diseñado para negocios y comunidad.',
+        image: "/src/public/projects_images/obra-7.jpg"
     }
-]
-
+];

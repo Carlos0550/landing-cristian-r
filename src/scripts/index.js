@@ -1,5 +1,8 @@
-import { observer } from "../utils/Hero/GenerateBlurHero.js";
+import { insertProjects } from "../utils/GenerateProjects/GenerateProjects.js"
+import { initObserver } from "../utils/Hero/GenerateBlurHero.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    observer();
+    initObserver();
+    insertProjects()
+    console.warn("DOM cargado");
 });
