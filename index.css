@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
+    
     box-sizing: border-box;
     font-family: 'Parkinsans', Courier, monospace;
 }
@@ -10,18 +9,29 @@
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    
 }
 
-
-
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    
+}
 
 .hero-image {
     width: 100%;
     height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+    overflow: hidden;
 }
 
 .hero-image img {
@@ -33,22 +43,6 @@ html {
     transition: filter 150ms ease-in-out;
 }
 
-#hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    ;
-    color: #fff;
-    padding: 20px;
-}
-
 #hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -57,10 +51,11 @@ html {
 
 .hero-container{
     transition: all 0.5s ease-in-out;
+    position: absolute;
 }
 
 .hero-container.blur{
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.259);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
@@ -107,14 +102,15 @@ html {
     text-align: center;
 }
 
-#cards__wrapper {
+.cards__wrapper {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.card {
+/* .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -126,15 +122,9 @@ html {
     width: 400px;
     height: 400px;
     background-color: #312829;
-}
+} */
 
-.card-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-    color: white;
 
-}
 
 .card-image {
     max-width: 400px;
@@ -145,11 +135,35 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 0 10px 0 10px;
+    border-radius: 10px;
+}
+
+.card-texts {
+    position: absolute;
+    bottom: 0; /* Anclar al fondo */
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Degradado suave */
+    color: white; 
+    z-index: 2;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: white;
+
 }
