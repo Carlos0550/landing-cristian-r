@@ -29,8 +29,6 @@ html {
 .hero-image {
     width: 100%;
     height: 100vh;
-    aspect-ratio: 1/1;
-    border-radius: 1.5rem;
     overflow: hidden;
 }
 
@@ -39,8 +37,11 @@ html {
     height: 100%;
     object-fit: cover;
     object-position: bottom;
-    filter: blur(0px);
+    filter: blur(1px);
+    box-shadow: none;
+    border-radius: 1rem;
     transition: filter 150ms ease-in-out;
+   
 }
 
 #hero h1 {
